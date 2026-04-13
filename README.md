@@ -1,16 +1,16 @@
-# GNSS RTK Integration for Robotics (ROS2)
+# GNSS RTK Integration for Robotics (ROS)
 
 ## Overview
 
 This repository provides a complete, end-to-end tutorial to achieve **centimeter-level positioning** on a robot using:
 
-- GNSS receiver + multi-band antenna (L1/L2)
-- RTK corrections via Centipede RTK Network (NTRIP)
-- A Raspberry Pi 4B running a custom ROS2 package
-- Internet connectivity (4G / WiFi / smartphone tethering) for receiving RTK corrections
+- a GNSS receiver and a multi-band antenna
+- RTK corrections from the Centipede RTK Network through NTRIP
+- a Raspberry Pi 4B running the ROS node
+- internet connectivity (WiFi, smartphone tethering, or 4G dongle) to receive RTCM corrections
 
-The goal is to make the system fully reproducible, from hardware setup to ROS topic publishing.
-
+The system uses a SparkFun RTK Surveyor connected to the robot computer, which receives GNSS satellite measurements and RTK correction data. A custom ROS node reads the receiver output, injects NTRIP corrections into the receiver, and publishes the resulting GNSS navigation data to ROS topics.
+ 
 ---
 
 ## System Architecture
@@ -42,3 +42,27 @@ The goal is to make the system fully reproducible, from hardware setup to ROS to
 - **Connections**:
   - GNSS Receiver ↔ Raspberry Pi: USB or UART  
   - Raspberry Pi ↔ Internet: WiFi / 4G / tethering  
+
+### High-Level Data Flow
+
+```text
+GNSS Satellites
+      │
+      ▼
+[GNSS Antenna]
+      │
+      ▼
+[SparkFun RTK Surveyor]
+      ▲
+      │  RTCM corrections
+      │
+[Raspberry Pi 4B]
+      ▲
+      │
+      │ Internet connection
+      │ (WiFi / 4G / smartphone tethering)
+      ▼
+[Centipede RTK Network]
+
+The Raspberry Pi also runs the ROS node, reads GNSS data from the receiver,
+forwards NTRIP corrections to the receiver, and publishes navigation data to ROS.
