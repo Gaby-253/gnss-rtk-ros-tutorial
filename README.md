@@ -94,7 +94,7 @@ ANCELIN Julien, Stefal, Julien, Simon Moinard, Wilthezin, François, & Romain Ba
 
 ### Step 1 — Find a nearby base station
 
-1. Open a Centipede-compatible caster/map interface [Centipede Map]([https://map.centipede-rtk.org/index.php/view/map/?repository=cent&project=centipede])
+1. Open a Centipede-compatible caster/map interface [Centipede Map](https://map.centipede-rtk.org/index.php/view/map/?repository=cent&project=centipede)
 2. . Locate the closest **mountpoint** to your robot and save the informations for later
 
 👉 Important:
