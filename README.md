@@ -26,8 +26,8 @@ The goal is to make the system fully reproducible, from hardware setup to ROS to
   - Improves accuracy and convergence time  
 
 - **Onboard Computer**: Raspberry Pi 4B  
-  - Runs ROS2  
-  - Hosts GNSS driver + your custom package  
+  - Runs ROS or ROS2 
+  - Hosts GNSS driver + others custom package  
   - Handles NTRIP client for RTK corrections  
 
 - **Connectivity (required for RTK)**:
