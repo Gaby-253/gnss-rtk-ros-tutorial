@@ -1,0 +1,5 @@
+<launch>
+    <!-- Launch the rtk.py node from gnss_trk package -->
+    <node pkg="gnss_rtk" type="navpvt_pub.py" name="rtk_node" output="screen" />
+
+</launch>
