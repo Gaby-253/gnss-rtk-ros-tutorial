@@ -125,7 +125,7 @@ These parameters are defined in the Python node located at: `scripts/navpvt_pub.
 ```python
 NTRIP_SERVER = "caster.centipede.fr"
 NTRIP_PORT = 2101
-MOUNTPOINT = "YOUR_MOUNTPOINT"
+MOUNTPOINT = "LLENX"
 NTRIP_USER = "centipede"
 NTRIP_PASSWORD = "centipede"
 ```
