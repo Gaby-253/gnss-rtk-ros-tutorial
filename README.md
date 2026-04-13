@@ -297,4 +297,35 @@ MIT License
 
 *Gabriel Gattaux*
 
+## Citation
+
+If you use this repository, the GNSS RTK integration pipeline, or this tutorial in your work, please cite the following paper:
+
+Gattaux, G.G., Wystrach, A., Serres, J.R. et al. (2025).
+*Route-centric ant-inspired memories enable panoramic route-following in a car-like robot*.
+Nature Communications, 16, 8328.
+https://doi.org/10.1038/s41467-025-62327-3
+
+---
+
+### BibTeX
+
+```bibtex
+@article{gattaux2025routecentric,
+  author = {Gattaux, G. G. and Wystrach, A. and Serres, J. R. and Ruffier, F.},
+  title = {Route-centric ant-inspired memories enable panoramic route-following in a car-like robot},
+  journal = {Nature Communications},
+  volume = {16},
+  pages = {8328},
+  year = {2025},
+  doi = {10.1038/s41467-025-62327-3}
+}
+```
+
+---
+
+### Acknowledgment
+
+This GNSS RTK integration tutorial was developed as part of the research conducted on the Antcar robotic platform in the context of the above publication.
+
 ---
