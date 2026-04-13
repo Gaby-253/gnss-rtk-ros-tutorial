@@ -231,7 +231,7 @@ pip install pygnssutils numpy
 4. Launch node
 
 ```bash
-roslaunch gnss_rtk your_launch_file.launch
+roslaunch gnss_rtk startup_gnss_image.launch
 ```
 
 Check:
