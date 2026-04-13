@@ -185,7 +185,7 @@ Launch file:
 Run:
 
 ```bash
-roslaunch gnss_rtk your_launch_file.launch
+roslaunch gnss_rtk startup_gnss_image.launch
 ```
 
 ---
