@@ -279,6 +279,7 @@ rostopic echo /navpvt_topic
 
 ## Future Improvements
 
+* Move to ROS 2 
 * Move parameters to ROS launch file
 * Add RTK status topic
 * Integrate with `robot_localization`
